@@ -1,0 +1,12 @@
+# background properties:-
+
+1. background color
+2. background image
+3. background repeat
+4. background position
+5. background size
+6. background attachment
+7. background origin
+8. background clip
+9. background blend
+1. background shortend properties

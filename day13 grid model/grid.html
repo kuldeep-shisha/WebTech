@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 100vw;
+        height: 100vh;
+        border: 2px solid red;
+        display: grid;
+        /* grid-template-columns: auto auto auto; */
+        /* grid-template-columns: 100px 200px 300px; */
+        /* grid-template-columns: 50% 40%; */
+        /* grid-template-columns: 1fr 2fr 3fr; */
+        grid-template-columns: repeat(5, 19%);
+        /* grid-template-columns: 100px 200px 300px 400px 500px; */
+
+        /* grid-template-rows: auto auto auto; */
+        /* grid-template-rows: 200px 200px; */
+        grid-template-rows: repeat(2, 50%);
+        gap: 10px;
+      }
+
+      .chil {
+        padding: 25px;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>grid model</h1>
+    <div class="parent">
+      <div class="chil" id="child1">child-1</div>
+      <div class="chil" id="child2">child-2</div>
+      <div class="chil" id="child3">child-3</div>
+      <div class="chil" id="child4">child-4</div>
+      <div class="chil" id="child5">child-5</div>
+      <div class="chil" id="child6">child-6</div>
+      <div class="chil" id="child7">child-7</div>
+      <div class="chil" id="child8">child-8</div>
+      <div class="chil" id="child9">child-9</div>
+      <div class="chil" id="child10">child-10</div>
+    </div>
+  </body>
+</html>

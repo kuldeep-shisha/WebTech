@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:enabled {
+        background-color: red;
+      }
+      input:disabled {
+        cursor: not-allowed;
+        color: brown;
+      }
+      input:checked {
+        accent-color: red;
+      }
+      /* input:che{accent-color: red;} */
+    </style>
+  </head>
+  <body>
+    <!-- 1.enabled
+        2.disabled
+        3.checked -->
+    <h1>UI element selector</h1>
+    <div>
+      <label for="">Username:</label>
+      <input type="text" placeholder="enter Username" />
+    </div>
+    <br />
+    <div>
+      <label for="">ADMIN: </label>
+      <input type="text" disabled placeholder="NOT ALLOWED" />
+    </div>
+    <br />
+    <div>
+      <label for="">
+        <input type="checkbox" checked name="" />I accept Terms & Condition
+      </label>
+
+      <label for=""><input type="radio" name="" id="" />male</label>
+    </div>
+  </body>
+</html>

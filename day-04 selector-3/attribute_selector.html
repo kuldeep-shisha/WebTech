@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* targeting */
+      input[type] {
+        background-color: aqua;
+      }
+      /* 2.by exact value */
+      input[type="password"] {
+        background-color: brown;
+        color: white;
+      }
+      /* 3. Target the word present inside anywhere in the attribute value */
+      a[href*="qspiders"] {
+        text-decoration: none;
+      }
+      /* 4. the exact word is present inside the entire attribute value */
+      button[class~="btn"] {
+        padding: 8px 10px;
+        font-size: 20px;
+        color: white;
+        background-color: gray;
+      }
+      .Primary {
+        border: 2px solid red;
+      }
+
+      /* 5. Ending with value */
+      img[src$="jpg"] {
+        border: 2px solid black;
+      }
+
+      /* 6. Starting value */
+      p[class^="first"] {
+        background-color: skyblue;
+      }
+
+      p[class^="second"] {
+        background-color: salmon;
+      }
+      /* 7. Hyphen Value */
+      p[class|="en"] {
+        border: 2px solid rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>attribute selector</h1>
+    <br /><br />
+    <h2>
+      <ins><strong>input element</strong></ins>
+    </h2>
+    <input type="text" placeholder="enter your name" />
+    <input type="email" name="" id="" placeholder="enter your email" />
+    <input type="password" name="" id="" placeholder="enter your password" />
+
+    <br /><br />
+    <!-- LINKS -->
+    <a href="https://www.google.com/">google</a>
+    <a href="htttps://www.facebook.com/">Facebook</a>
+    <a href="htttps://www.qspiders.com/">Qspider</a>
+    <br /><br />
+    <!-- Buttons -->
+    <button class="btn Primary">Primary</button>
+    <button class="btn Secondary">Secondary</button>
+    <br /><br />
+    <!-- Images -->
+    <img src="banner.jpg" alt="Banner" />
+    <img src="logo.png" alt="logo" />
+    <br /><br />
+    <p class="first para">First Paragraph</p>
+    <p class="second para">Second Paragraph</p>
+    <br /><br />
+    <p class="en-IN">Namste India</p>
+    <p class="en">Hello</p>
+    <p class="en-fr">Bonjour</p>
+    <p class="sp-en">Ciao</p>
+    <p class="jp">kimichioa</p>
+  </body>
+</html>

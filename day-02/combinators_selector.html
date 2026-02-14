@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div p {
+        border: solid chocolate;
+        background-color: aqua;
+      }
+      section p {
+        border: solid crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.descedent selector (spcae)
+         2. child selector (>)
+         3. General sibling selector (~)
+         4. Adjacent sibling selector (+)
+         5. Grouping selector (,) -->
+
+    <h1>descedent selector</h1>
+    <div>
+      <h1>heading-1</h1>
+      <p>paragraph-1</p>
+      <main>
+        <h3>heading-2</h3>
+        <p>paragraph-3</p>
+        <article>
+          <p>paragraph-4</p>
+        </article>
+        <p>paragraph-5</p>
+      </main>
+      <section>
+        <p>paragraph-8</p>
+      </section>
+    </div>
+    <p>paragraph-66</p>
+  </body>
+</html>

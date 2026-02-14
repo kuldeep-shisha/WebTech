@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 600px;
+        height: 150px;
+        background-color: tomato;
+        display: flex;
+        flex-direction: row;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+        background-color: teal;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #parent1 {
+        justify-content: start;
+      }
+      #parent2 {
+        justify-content: center;
+      }
+      #parent3 {
+        justify-content: end;
+      }
+      #parent4 {
+        justify-content: space-evenly;
+      }
+      #parent5 {
+        justify-content: space-around;
+      }
+      #parent6 {
+        justify-content: space-between;
+      }
+      #parent7 {
+        justify-content: center;
+        align-items: start;
+      }
+      #parent8 {
+        justify-content: center;
+        align-items: center;
+      }
+      #parent9 {
+        justify-content: center;
+        align-items: end;
+      }
+      #parent10 {
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Box in CSS</h1>
+
+    <h3>justify content:start</h3>
+    <div class="parent" id="parent1">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>justify content:center</h3>
+    <div class="parent" id="parent2">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>justify content:end</h3>
+    <div class="parent" id="parent3">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>justify content:space evenly</h3>
+    <div class="parent" id="parent4">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>justify content:space around</h3>
+    <div class="parent" id="parent5">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>justify content:between</h3>
+    <div class="parent" id="parent6">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>
+      justify content:center <br />
+      align items:start
+    </h3>
+    <div class="parent" id="parent7">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>
+      justify content:center <br />
+      align items:center
+    </h3>
+    <div class="parent" id="parent8">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>
+      justify content:center <br />
+      align items:end
+    </h3>
+    <div class="parent" id="parent9">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h3>
+      justify content:space evenly <br />
+      align items:center
+    </h3>
+    <div class="parent" id="parent10">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+  </body>
+</html>
