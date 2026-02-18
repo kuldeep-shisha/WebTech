@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      .parent {
+        width: 100%;
+        height: 60px;
+        background-color: blue;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        overflow: hidden;
+      }
+      .text {
+        color: white;
+        animation: textmove 5s linear infinite;
+      }
+      @keyframes textmove {
+        from {
+          transform: translateX(90vw);
+        }
+        to {
+          transform: translate(-300%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="text">🚀 sale</div>
+      <div class="text">🚀 sale</div>
+      <div class="text">🚀 sale</div>
+    </div>
+  </body>
+</html>
