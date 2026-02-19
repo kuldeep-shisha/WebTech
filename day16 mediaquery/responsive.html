@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+      }
+      .parent {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px;
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 0px 0px;
+      }
+      .box {
+        width: 30%;
+        height: 500px;
+        border-radius: 10px;
+        border: 1px solid;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      #box1 {
+        background-image: url(https://tse4.mm.bing.net/th/id/OIP.h4NzwYIvgxU9V6c6gpiwxgHaLG?pid=Api&P=0&h=180);
+      }
+      #box2 {
+        background-image: url(https://tse1.mm.bing.net/th/id/OIP.ra94iPZIPsiudKqy2TDSKQHaLH?pid=Api&P=0&h=180);
+      }
+      #box3 {
+        background-image: url(https://tse2.mm.bing.net/th/id/OIP.ViwfoqAlcGqP9GK0tDcaOQHaHa?pid=Api&P=0&h=180);
+      }
+      @media screen and (min-width: 320px) and (max-width: 700px) {
+        h1 {
+          text-align: center;
+          font-size: 35px;
+          text-decoration: underline;
+        }
+        .parent {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .box {
+          width: 90%;
+          border: 1px solid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive site</h1>
+    <div class="parent">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      header {
+        height: 10vh;
+        background-color: #f7f4ed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header > aside > img {
+        width: 125px;
+        margin-left: 160px;
+      }
+      nav {
+        height: 10vh;
+        width: 45%;
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      #b2 {
+        padding: 5px;
+        font-size: 13px;
+        color: white;
+        background-color: black;
+        width: 110px;
+        border-radius: 30px;
+        text-align: center;
+      }
+
+      header > nav > ul {
+        margin-top: 5px;
+        text-decoration: none;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        height: 80vh;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        background-image: url();
+        display: flex;
+        background-color: #f7f4ed;
+      }
+      #a1 {
+        width: 60%;
+        margin-left: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 40px;
+      }
+      h1 {
+        margin-top: 30px;
+        color: #242424;
+        width: 700px;
+        font-size: 100px;
+      }
+      #b1 {
+        font-size: large;
+        width: 190px;
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border-radius: 35px;
+        border: 1px solid;
+      }
+      p {
+        font-size: large;
+      }
+      #as1 {
+        margin-left: 80px;
+        height: 80vh;
+        width: 30%;
+        overflow: hidden;
+        /* background-image: url(https://miro.medium.com/v2/format:webp/4*SdjkdS98aKH76I8eD0_qjw.png);
+              background-repeat: no-repeat;
+              background-position: right;
+              background-size: contain; */
+      }
+      #i1 {
+        margin-left: 50px;
+        height: 85vh;
+        width: 90%;
+        object-fit: 110%;
+        object-position: right;
+      }
+      #ul1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding-top: 23px;
+        /* margin-top: 23px; */
+        color: gray;
+      }
+      footer {
+        /* border: 1px transparent; */
+        height: 10vh;
+        background-color: #f7f4ed;
+      }
+      @media screen and (min-width: 320px) and (max-width: 700px) {
+        header {
+          display: flex;
+          justify-content: space-between;
+        }
+        header > aside > img {
+          width: 125px;
+          margin-left: 50px;
+        }
+        header > nav > ul {
+          display: none;
+        }
+        #as1 {
+          display: none;
+        }
+        nav {
+          width: 140px;
+        }
+        #b2 {
+          font-size: 15px;
+          padding: 10px;
+          width: 120px;
+          border: 1px solid;
+        }
+        #a1 {
+          margin-left: 70px;
+          gap: 30px;
+        }
+        h1 {
+          font-size: 70px;
+          width: 250px;
+        }
+        #b1 {
+          width: 170px;
+          padding: 10px 20px;
+          background-color: rgb(7, 196, 7);
+          color: white;
+          border-radius: 40px;
+          border: 1px solid;
+        }
+        #ul1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          padding-top: 23px;
+          /* margin-top: 23px; */
+          color: white;
+        }
+        footer {
+          height: 10vh;
+          background-color: black;
+        }
+        #ul1 {
+          gap: 30px;
+          margin-left: 40px;
+          justify-content: start;
+        }
+        .l1 {
+          display: none;
+        }
+        #l2 {
+          order: 2;
+        }
+        #l3 {
+          order: 1;
+        }
+        #l5 {
+          order: 4;
+        }
+        #l6 {
+          order: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <aside>
+        <img
+          src="C:\Users\kulde\Downloads\Medium_ Read and write stories_\download.svg"
+          alt=""
+        />
+      </aside>
+      <nav>
+        <ul type="none">
+          <li>Our Story</li>
+          <li>Membership</li>
+          <li>Write</li>
+          <li>Sign in</li>
+        </ul>
+        <button id="b2">Get Started</button>
+      </nav>
+    </header>
+    <main>
+      <article id="a1">
+        <h1>Human <br />stories & ideas</h1>
+        <p>A place to read, write, and deepen your understanding</p>
+        <button id="b1">Start reading</button>
+      </article>
+      <aside id="as1">
+        <img
+          src="https://miro.medium.com/v2/format:webp/4*SdjkdS98aKH76I8eD0_qjw.png"
+          alt=""
+          id="i1"
+        />
+      </aside>
+    </main>
+    <footer>
+      <ul id="ul1" type="none">
+        <li id="l2">Help</li>
+        <li class="l1">Status</li>
+        <li id="l3">About</li>
+        <li class="l1">Careers</li>
+        <li class="l1">Press</li>
+        <li class="l1">Blog</li>
+        <li id="l5">Privacy</li>
+        <li class="l1">Rules</li>
+        <li id="l6">Terms</li>
+        <li class="l1">Text To Speech</li>
+      </ul>
+    </footer>
+  </body>
+</html>
